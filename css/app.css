@@ -179,18 +179,22 @@ nav {
     transition-delay: 0s;
     pointer-events: auto;
   }
-  nav > a {
+  .navLinks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .navLinks > a {
     text-decoration: none;
     color: #eef;
     font-size: 1.4em;
-    display: inline-block;
     margin: 6px 0;
     padding: 8px 20px;
     border-radius: 10px;
     transition: color 260ms ease, background 260ms ease;
   }
-  nav > a:hover,
-  nav > a[aria-current="page"] {
+  .navLinks > a:hover,
+  .navLinks > a[aria-current="page"] {
     color: #699;
     background: rgba(63, 182, 139, 0.12);
   }
@@ -238,6 +242,9 @@ nav {
     "cta cta cta cta cta cta cta cta cta cta cta cta"
     "ftr ftr ftr ftr ftr ftr ftr ftr ftr ftr ftr ftr";
 }
+main {
+  grid-column: 1 / -1;
+}
 /* #endregion */
 
 /* #region 7. Header / Animated Hero Scene */
@@ -256,7 +263,7 @@ header {
     min-height: 340px;
   }
   /* Every decorative layer ignores the mouse so it can never block a click */
-  .starLayer, .gearLayer, .glyphLayer, .emberLayer, .mistLayer {
+  .starLayer, .gearLayer, .glyphLayer, .emberLayer, .sparkLayer, .mistLayer {
     position: absolute;
     inset: 0;
     pointer-events: none;
@@ -714,14 +721,20 @@ footer {
   footer > div:nth-child(3) {
     text-align: right;
   }
+  .footerLinks {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-end;
+  }
   /* -- Social media icon links -- */
-  #footerSocials {
+  .socialIcons {
     display: flex;
     justify-content: center;
     gap: 14px;
     margin-top: 14px;
   }
-  #footerSocials a {
+  .socialIcons a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -734,7 +747,7 @@ footer {
     text-decoration: none;
     transition: background 220ms ease, color 220ms ease, border-color 220ms ease, transform 150ms ease;
   }
-  #footerSocials a:hover {
+  .socialIcons a:hover {
     background: #498;
     border-color: #498;
     color: #011;
@@ -764,6 +777,9 @@ footer {
   }
   #footerLogo {
     margin: 0 auto;
+  }
+  .footerLinks {
+    align-items: center;
   }
 }
 
