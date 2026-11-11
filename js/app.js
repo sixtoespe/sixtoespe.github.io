@@ -16,9 +16,7 @@ document.querySelector('#year').textContent = year1.getFullYear();
 // #region Side Navigation Toggle
 // The nav and its hamburger button are revealed together with a
 // circular "wipe" (see css/app.css region 5) instead of a slide.
-// Toggling is done purely by adding/removing the .isOpen class — CSS
-// owns the animation, JS just owns the state (and keeps aria-expanded
-// in sync so screen readers know whether the menu is open).
+
 let isMenuOpen = false;
 
 const hamburgerButton = document.querySelector('#hamburger');
