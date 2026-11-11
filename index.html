@@ -2,25 +2,117 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="description" content="Sixto Espejo — industrial engineer, quality assurance specialist, ISO 9001:2015 auditor and Microsoft Access / VBA developer, learning Java and mobile app development.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0d1117">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Redaction+70:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/images/favicon-64.png">
+  <link rel="apple-touch-icon" href="assets/images/logo-200.png">
   <link rel="stylesheet" href="css/app.css">
-  <title>Sixtoespe portfolio home</title>
+  <script src="js/app.js" defer></script>
+  <script src="js/HeaderScene.js" defer></script>
+  <title>Sixto Espejo &mdash; Engineer &amp; Developer</title>
 </head>
 <body>
-  <header></header>
-  <nav>
-    <a href="index.html" title="home">HOME </a> / 
-    <a href="about.html" title="about">ABOUT </a> / 
-    <a href="work.html" title="work">WORK </a> / 
-    <a href="skills.html" title="skills">SKILLS </a> / 
-    <a href="contact.html" title="contact">CONTACT </a>
+  <a class="skipLink" href="#main">Skip to content</a>
+  <a id="logo" href="index.html" title="home">
+    <img src="assets/images/logo-100.png" srcset="assets/images/logo-100.png 1x, assets/images/logo-200.png 2x" width="100" height="100" alt="Sixto's logo: a green gear around a code symbol">
+  </a>
+  <div id="logoWordmark">Sixto<span>engineer &amp; developer</span></div>
+  <button id="hamburger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="siteNav">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </button>
+  <nav id="siteNav" aria-label="Main">
+    <div class="navLinks">
+      <a href="index.html" aria-current="page">home</a>
+      <a href="about.html">about</a>
+      <a href="skills.html">skills</a>
+      <a href="contact.html">contact</a>
+    </div>
+    <div id="navSocials">
+      <a href="https://github.com/sixtoespe" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <!-- TODO: replace with your own LinkedIn profile URL -->
+      <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
   </nav>
-  <main>
-    <h1>Welcome to my portfolio</h1>
-  </main>
-  <footer></footer>
+  <div id="grid">
+    <header>
+      <div class="starLayer" aria-hidden="true"></div>
+      <div class="gearLayer" aria-hidden="true"></div>
+      <div class="mistLayer" aria-hidden="true">
+        <div class="mistBand"></div>
+        <div class="mistBand mistBandAlt"></div>
+      </div>
+      <div class="glyphLayer" aria-hidden="true"></div>
+      <div class="sparkLayer" aria-hidden="true"></div>
+      <div class="heroContent">
+        <div class="heroText">
+          <p class="eyebrow">&lt;hello world /&gt;</p>
+          <h1>Hi, I'm Sixto</h1>
+          <p class="heroTagline">Industrial Engineer | QA Specialist | ISO 9001:2015 Auditor | Access &amp; VBA Developer</p>
+          <p class="heroSub">I turn real business processes into working software, and I'm growing my skills in Java, web and mobile app development.</p>
+          <div class="heroActions">
+            <a class="btn" href="skills.html">See my skills</a>
+            <a class="btn btnOutline" href="contact.html">Get in touch</a>
+          </div>
+        </div>
+        <img class="heroGear" src="assets/images/gear-code.gif" width="360" height="360" alt="An animated green gear turning around a code symbol">
+      </div>
+    </header>
+    <main id="main">
+      <section class="section">
+        <h2 class="sectionTitle">Where engineering meets code</h2>
+        <p class="sectionLead">Quality and process thinking on one side, software on the other. I enjoy the place where they meet.</p>
+        <div class="cards">
+          <article class="card">
+            <span class="icon"><i class="fa-solid fa-gears" aria-hidden="true"></i></span>
+            <h3>Quality &amp; Process</h3>
+            <p>Industrial engineer and quality assurance specialist, and a certified ISO 9001:2015 auditor.</p>
+          </article>
+          <article class="card">
+            <span class="icon"><i class="fa-solid fa-database" aria-hidden="true"></i></span>
+            <h3>Access &amp; VBA Apps</h3>
+            <p>Expert Microsoft Access and Visual Basic developer who loves turning real business processes into working software.</p>
+          </article>
+          <article class="card">
+            <span class="icon"><i class="fa-solid fa-mobile-screen" aria-hidden="true"></i></span>
+            <h3>Web &amp; Mobile</h3>
+            <p>Studying Java plus HTML, CSS and JavaScript, designing in Figma, with mobile app development in process.</p>
+          </article>
+        </div>
+      </section>
+      <section class="section alt ctaBand">
+        <h2 class="sectionTitle">Let's connect</h2>
+        <p>Have a question, an idea or something to build together? I'd love to hear from you.</p>
+        <a class="btn" href="contact.html">Send a message</a>
+      </section>
+    </main>
+    <footer>
+      <div>
+        <a href="#top" title="back to top" id="footerLogo">
+          <img src="assets/images/logo-100.png" srcset="assets/images/logo-100.png 1x, assets/images/logo-200.png 2x" width="84" height="84" alt="Sixto's logo">
+        </a>
+      </div>
+      <div>
+        &copy; <span id="year">2026</span> <span class="footerName">Sixto Espejo</span> &mdash; engineering quality, one line of code at a time.
+        <div class="socialIcons">
+          <a href="https://github.com/sixtoespe" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <!-- TODO: replace with your own LinkedIn profile URL -->
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="footerLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </footer>
+  </div>
 </body>
 </html>
