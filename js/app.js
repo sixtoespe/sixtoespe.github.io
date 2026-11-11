@@ -17,7 +17,7 @@ document.querySelector('#year').textContent = year1.getFullYear();
 // The nav and its hamburger button are revealed together with a
 // circular "wipe" (see css/app.css region 5) instead of a slide.
 
-let isMenuOpen = false;
+let isMenuOpen = True
 
 const hamburgerButton = document.querySelector('#hamburger');
 const siteNav = document.querySelector('nav');
