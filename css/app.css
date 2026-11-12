@@ -169,7 +169,7 @@ nav {
   font-family: "JetBrains Mono", "Consolas", monospace;
   border-left: 2px solid #498;
   clip-path: circle(0% at 100% 0%);
-  visibility: hidden; /* keeps hidden links out of the Tab order */
+  visibility: hidden; 
   transition: clip-path 620ms cubic-bezier(0.65, 0, 0.35, 1), visibility 0s linear 620ms;
   pointer-events: none;
 }
@@ -226,9 +226,6 @@ nav {
 /* #endregion */
 
 /* #region 6. App Shell Grid */
-/* The entire page is a 12-column grid with named areas for each section.
-   The main content area spans all columns, and the header and footer
-   also span all columns. Each section has its own grid area. */
 /* hdr: header, hom: home, abt: about, lrn: learning, stk: stack, prj: projects, con: contact, cta: call to action, ftr: footer */
 
 #grid {
@@ -356,7 +353,7 @@ header {
   }
   /* -- 7f. Hero copy + animated gear -- */
   .heroContent {
-    position: relative; /* z-index only works on positioned elements */
+    position: relative; 
     z-index: 4;
     display: flex;
     flex-wrap: wrap;
@@ -586,13 +583,27 @@ header {
   border-top: 1px solid #334;
   border-bottom: 1px solid #334;
 }
-#home { grid-area: hom; }
-#about { grid-area: abt; }
-#learning { grid-area: lrn; }
-#stack { grid-area: stk; }
-#projects { grid-area: prj; }
-#contact { grid-area: con; }
-#connect { grid-area: cta; }
+#home { 
+  grid-area: hom; 
+}
+#about { 
+  grid-area: abt; 
+}
+#learning { 
+  grid-area: lrn; 
+}
+#stack { 
+  grid-area: stk; 
+}
+#projects { 
+  grid-area: prj; 
+}
+#contact { 
+  grid-area: con; 
+}
+#connect { 
+  grid-area: cta; 
+}
 .sectionTitle {
   text-align: center;
   font-size: clamp(1.5rem, 3.2vw, 2.1rem);
