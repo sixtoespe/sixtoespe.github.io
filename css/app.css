@@ -1,4 +1,4 @@
-/* #region 1. Global Reset & Base Typography */
+/* #region 1*/
 * {
   padding: 0;
   margin: 0;
@@ -38,7 +38,7 @@ img {
 }
 /* #endregion */
 
-/* #region 2. Accessibility Helpers */
+/* #region 2. */
 .skipLink {
   position: absolute;
   left: 12px;
@@ -226,6 +226,10 @@ nav {
 /* #endregion */
 
 /* #region 6. App Shell Grid */
+/* The entire page is a 12-column grid with named areas for each section.
+   The main content area spans all columns, and the header and footer
+   also span all columns. Each section has its own grid area. */
+/* hdr: header, hom: home, abt: about, lrn: learning, stk: stack, prj: projects, con: contact, cta: call to action, ftr: footer */
 #grid {
   display: grid;
   width: 100%;
