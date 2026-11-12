@@ -226,10 +226,7 @@ nav {
 /* #endregion */
 
 /* #region 6. App Shell Grid */
-/* The entire page is a 12-column grid with named areas for each section.
-   The main content area spans all columns, and the header and footer
-   also span all columns. Each section has its own grid area. */
-/* hdr: header, hom: home, abt: about, lrn: learning, stk: stack, prj: projects, con: contact, cta: call to action, ftr: footer */
+
 #grid {
   display: grid;
   width: 100%;
