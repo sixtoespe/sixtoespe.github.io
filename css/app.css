@@ -62,8 +62,8 @@ img {
 
 /* #region 3. Site Logo */
 #logo {
-  position: absolute; /* scrolls away with the page; the menu button stays */
-  z-index: 3;
+  position: absolute;
+  z-index: 5;
   top: 18px;
   left: 28px;
   width: 84px;
