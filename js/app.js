@@ -1,10 +1,4 @@
-/* ============================================================
-   app.js
-   ------------------------------------------------------------
-   Site-wide chrome: footer year, hamburger <-> nav toggle.
-   Contact form checks live in contact.js; the header animation
-   lives in HeaderScene.js.
-   ============================================================ */
+
 
 // #region Footer Year
 // Keeps the copyright year in the footer accurate without a
