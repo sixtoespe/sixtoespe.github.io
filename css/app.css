@@ -303,7 +303,7 @@ header {
     from { transform: translateX(-10%); }
     to   { transform: translateX(-55%); }
   }
-  /* -- 7c. Slow background gears (replaces the castle silhouette) -- */
+  /* -- 7c. Slow background gears*/
   .bgGear {
     position: absolute;
     fill: rgba(63, 182, 139, 0.09);
