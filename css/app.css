@@ -106,9 +106,7 @@ img {
 /* #endregion */
 
 /* #region 4. Hamburger Toggle*/
-   /*Bars morph into an "X" when the nav is open, and the click
-   target doubles as the origin point for the nav's circular
-   reveal (region 5) so the two animations read as one gesture. */
+  
 #hamburger {
   position: fixed;
   z-index: 33;
@@ -151,9 +149,7 @@ img {
 /* #endregion */
 
 /* #region 5. Side Navigation*/
-   /*Lives permanently at right:0 and is revealed with a circular wipe
-   growing from the hamburger button's corner (same approach as the
-   assignment). .isOpen is the only state; CSS owns the animation. */
+   
 nav {
   position: fixed;
   z-index: 13;
@@ -231,7 +227,7 @@ nav {
 #grid {
   display: grid;
   width: 100%;
-  grid-template-columns: repeat(12, minmax(0, 1fr)); /* minmax(0, ...) stops wide children stretching the page */
+  grid-template-columns: repeat(12, minmax(0, 1fr)); 
   grid-auto-rows: minmax(0, auto);
   grid-template-areas:
     "hdr hdr hdr hdr hdr hdr hdr hdr hdr hdr hdr hdr"
@@ -264,7 +260,7 @@ header {
   header.pageHeader {
     min-height: 340px;
   }
-  /* Every decorative layer ignores the mouse so it can never block a click */
+  
   .starLayer, .gearLayer, .glyphLayer, .emberLayer, .sparkLayer, .mistLayer {
     position: absolute;
     inset: 0;
@@ -320,7 +316,7 @@ header {
   }
   @keyframes spinCW  { to { transform: rotate(360deg); } }
   @keyframes spinCCW { to { transform: rotate(-360deg); } }
-  /* -- 7d. Floating code glyphs (replaces the candles) -- */
+  /* -- 7d. Floating code glyphs*/
   .glyph {
     position: absolute;
     font-family: "JetBrains Mono", "Consolas", monospace;
@@ -846,7 +842,7 @@ footer {
   }
 }
 
-/* Respect the visitor's "reduce motion" setting */
+/* "reduce motion" setting */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.01ms !important;
