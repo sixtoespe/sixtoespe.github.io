@@ -4,7 +4,7 @@ Basic portfolio website, to share with the world.
 
 ## Overview
 
-A first-run personal portfolio built with core **HTML, CSS and JavaScript** (no frameworks). It introduces me, Sixto Espejo: industrial engineer, quality assurance specialist, ISO 9001:2015 auditor and Microsoft Access / VBA developer who is learning Java, Javascript, web and mobile app development, and AI as a key focus to create amazing results.
+A first-run personal portfolio built with core **HTML, CSS and JavaScript** (no frameworks). It introduces me, Sixto Espejo: industrial engineer, quality assurance specialist, ISO 9001:2015 auditor, Lean Six Sigma and Microsoft Access / VBA developer who is learning Java, Javascript, web and mobile app development, and AI as a key focus to create amazing results.
 
 This is a course assignment (a first run at a portfolio site).
 
