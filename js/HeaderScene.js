@@ -1,11 +1,3 @@
-/* ============================================================
-   HeaderScene.js
-   ------------------------------------------------------------
-   Brings the header's night-sky backdrop to life: twinkling stars,
-   slowly turning gears, floating code glyphs and rising embers.
-   Same layout as the class assignment's header scene (stars /
-   candles / embers), re-themed to the gear-and-code logo.
-   ============================================================ */
 
 // #region Configuration
 const STAR_COUNT = 70;
