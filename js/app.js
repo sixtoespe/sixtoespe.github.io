@@ -2,7 +2,7 @@
 
 // #region Footer Year
 // Keeps the copyright year in the footer accurate without a
-// yearly manual edit.
+// yearly manual edit (good stuff)
 let year1 = new Date();
 document.querySelector('#year').textContent = year1.getFullYear();
 // #endregion
