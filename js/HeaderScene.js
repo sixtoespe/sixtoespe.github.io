@@ -1,5 +1,5 @@
 
-// #region Configuration
+// #region Configuration STARS count, embers count, glyphs, background gears
 const STAR_COUNT = 70;
 const EMBER_COUNT = 22;
 const GLYPH_COUNT = 12;
